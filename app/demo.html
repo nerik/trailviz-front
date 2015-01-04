@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Demo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,11 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+         <style>
+            body { margin: 0; }
+            canvas { width: 100%; height: 100% }
+        </style>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -24,35 +29,15 @@
 
         <!-- Add your site or application content here -->
 
-        <div id="header">
-            <a href='https://runkeeper.com/apps/authorize?client_id=57d88846acd74d86bc34a2e2bdb29189&response_type=code&redirect_uri=http://127.0.0.1:8080/app/'>Connect to your Runkeeper account</a>
-        </div>
-
-        <div id="activitiesList"></div>
-
-        <div id="canvas">
-            <svg witdh="600" height="600" viewPort="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">   
-                <polyline fill="none" stroke="black" points="0,0 120,120" > 
-            </svg>
-        </div>
-
-
-
-        <script type="text/template" id="activity-template">
-            <div>
-                <strong><%= formattedDistance %>K</strong>
-                <%= formattedDate %>
-            </div>
-        </script>
+        
 
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="../bower_components/underscore/underscore.js"></script>
         <script src="../bower_components/moment/min/moment.min.js"></script>
-        <script src="../bower_components/tinycolor/dist/tinycolor-min.js"></script>
-        <script src="../bower_components/leaflet/dist/leaflet.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/vendor/three/three.min.js"></script>
+        <script src="js/vendor/three/TrackballControls.js"></script>
+        <script src="js/demo.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

@@ -1,0 +1,20 @@
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+#header {
+	background-color: black;
+}
+
+#activitiesList {
+	width: 200px;
+    height: 100%;
+    overflow: scroll;
+    position: absolute;
+}
+
+#canvas {
+	/* position: absolute; */
+	margin-left: 200px;
+}
